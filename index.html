@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spiral Apex</title>
+    <meta
+      name="description"
+      content="A 3D racing prototype with a descending cylindrical track, a custom car, and AI opponents."
+    />
+  </head>
+  <body>
+    <div id="app">
+      <div id="hud" class="hud">
+        <div class="brand">SPIRAL APEX</div>
+        <div class="stats">
+          <div class="stat-block">
+            <span class="label">SPEED</span>
+            <strong id="speed">0 km/h</strong>
+          </div>
+          <div class="stat-block">
+            <span class="label">LAP</span>
+            <strong id="lap">1</strong>
+          </div>
+          <div class="stat-block">
+            <span class="label">POS</span>
+            <strong id="rank">P1/6</strong>
+          </div>
+        </div>
+      </div>
+
+      <aside id="tuning" class="tuning-panel">
+        <h2>Garage</h2>
+        <label>
+          Body
+          <select id="bodyColor">
+            <option value="#22d3ee">Neon cyan</option>
+            <option value="#f87171">Coral red</option>
+            <option value="#a78bfa">Violet pulse</option>
+            <option value="#34d399">Emerald GT</option>
+            <option value="#fbbf24">Solar gold</option>
+          </select>
+        </label>
+        <label>
+          Accent
+          <select id="accentColor">
+            <option value="#f8fafc">Pearl</option>
+            <option value="#dbeafe">Ice blue</option>
+            <option value="#fee2e2">Rose</option>
+            <option value="#dcfce7">Mint</option>
+            <option value="#fef3c7">Amber</option>
+          </select>
+        </label>
+        <label>
+          Wheels
+          <select id="wheelColor">
+            <option value="#111827">Obsidian</option>
+            <option value="#374151">Gunmetal</option>
+            <option value="#3f3f46">Charcoal</option>
+          </select>
+        </label>
+      </aside>
+
+      <div id="tips" class="tips">
+        <span>W / ↑ accelerate</span>
+        <span>S / ↓ brake</span>
+        <span>A / D steer</span>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
